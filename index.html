@@ -12,7 +12,7 @@
 
 <body>
   <header class="container">
-    <h1>BikeShare Data Dashboard</h1>
+    <h1>Game Sales Data Dashboard</h1>
     <p class="sub">
       Build charts from real-ish city data. Start with Bar + Line, then pick an extension chart.
     </p>
@@ -31,16 +31,58 @@
         <option value="radar">Radar (multi-metric compare)</option>
       </select>
 
-      <label class="label">Month</label>
-      <select id="monthSelect"></select>
+      <label class="label">Year</label>
+      <select id="yearSelect">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2023</option>
+        <option value="2023">2024</option>
+        <option value="2024">2024</option>
+      </select>
 
-      <label class="label">Neighborhood</label>
-      <select id="hoodSelect"></select>
+      <label class="label">Publisher</label>
+      <select id="publisherSelect">
+        <option value="ApexArc">Apex Arc</option>
+        <option value="Moonbyte">Moonbyte</option>
+        <option value="PineCone">PineCone</option>
+        <option value="Northstar">Northstar</option>
+        <option value="BrightBarn">Bright Barn</option>
+        <option value="IronKite">Iron Kite</option>
+      </select>
+
+      <label class="label">Genre</label>
+      <select id="genreSelect">
+        <option value="racing">Racing</option>
+        <option value="sandbox">RPG</option>
+        <option value="shooter">Shooter</option>
+        <option value="simulator">Simulator</option>
+        <option value="strategy">Strategy</option>
+        <option value="MOBA">MOBA</option>
+        <option value="action">Action</option>
+        <option value="fighting">Fighting</option>
+        <option value="casual">Casual</option>
+      </select>
+
+      <label class="label">Platform</label>
+      <select id="platformSelect">
+        <option value="pc">PC</option>
+        <option value="mobile">Mobile</option>
+        <option value="console">Console</option>
+      </select>
+
+      <label class="label">Region</label>
+      <select id="regionSelect">
+        <option value="NA">North America</option>
+        <option value="EU">Europe</option>
+        <option value="JP">Japan</option>
+        <option value="ASIA">Asia</option>
+        <option value="JP">Japan</option>
+      </select>
 
       <label class="label">Metric</label>
       <select id="metricSelect">
-        <option value="trips" selected>Trips</option>
-        <option value="revenueUSD">Revenue (USD)</option>
+        <option value="revenue" selected>Revenue</option>
         <option value="avgDurationMin">Avg Duration (min)</option>
         <option value="incidents">Incidents</option>
         <option value="tempC">Temperature (C)</option>
