@@ -47,7 +47,7 @@ renderBtn.addEventListener("click", () => {
 
 // --- Students: you’ll edit / extend these functions ---
 function buildConfig(type, { year, metric, platform }) {
-  if (type === "bar") return barByNeighborhood(platform, metric, year);
+  if (type === "bar") return barByNeighborhood(year, metric);
   if (type === "line") return lineOverTime(metric, ["Year", "revenueUSD"]);
   if (type === "scatter") return scatterTripsVsTemp(genre);
   if (type === "doughnut") return doughnutMemberVsCasual(year, genre);
@@ -56,7 +56,7 @@ function buildConfig(type, { year, metric, platform }) {
 }
 
 // Task A: BAR — compare neighborhoods for a given month
-function barByNeighborhood(platform, metric, year) {
+function barByNeighborhood(year, metric) {
   const rows = chartData.filter(r => r.year === year);
 
   const labels = rows.map(r => r.platform);
